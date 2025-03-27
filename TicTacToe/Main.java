@@ -23,7 +23,7 @@ public class Main{
             if (board[row][col] == ' ') {
                 board[row][col] = player;
 
-                if (gameOver == haveWon(board, player)) {
+                if (haveWon(board, player)) {
                     printBoard(board);
                     System.out.println("Player " + player + " has won!");
                     gameOver = true;
